@@ -1,0 +1,56 @@
+#include<stdio.h>
+#include<string.h>
+
+
+void limpar_entrada() {
+     char c;
+     while ((c = getchar()) != '\n' && c != EOF) {}
+}
+int main()
+
+{
+   char at [50];
+   char tipo [50];
+   char endereco [50];
+   char terminal[50];
+   char inspecao [50];
+   char tecnico [50];
+   char acq [50];
+    
+    printf("********\n");
+    printf("*INSPEÇÃO VIVO*\n");
+    printf("********\n");
+    
+    printf("AT-");
+    scanf("%s", &at);
+    printf("\n");
+    
+    printf("ACQ - ");
+    limpar_entrada ();
+    fgets( acq, 50, stdin);
+    printf("\n");
+    
+    printf("TÉCNICO -");
+    fgets( tecnico, 50, stdin);
+    printf("\n");
+    
+    
+    printf("TIPO DE SERVIÇO -");
+    fgets( tipo, 50, stdin);
+    printf("\n");
+    
+    printf("ENDEREÇO -");
+    fgets( endereco, 50, stdin);
+    printf("\n");
+    
+    printf("TERMINAL -");
+    fgets( terminal, 50, stdin);
+    printf("\n");
+    
+    printf("INSPEÇÃO -");
+    fgets( inspecao, 50, stdin);
+    printf("\n");
+    
+    printf("FISCAL: WILLYANS SILVA");
+    return 0;
+}
