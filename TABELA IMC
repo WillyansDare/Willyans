@@ -1,0 +1,38 @@
+include <stdio.h>
+
+int main()
+{
+   float altura, peso, resultado;
+
+   printf("digite sua altura:\n");
+   scanf("%f", &altura);
+
+   printf("digite seu peso\n");
+   scanf("%f", &peso);
+
+   resultado = peso / (altura * altura);
+   printf("resultado:%f\n\n", resultado);
+
+   if(resultado <= 24.9){
+   printf("parabéns!!! Continue assim!\n\n");
+}
+   else if(resultado >= 25.0){
+   printf("======vigia varão!!!======\n\n");
+}
+   
+
+   printf("###### TABELA IMC ######\n\n");
+   printf("<10 = Desnutrição grau V\n");
+   printf("10 a 12.9 = Desnutrição grau IV\n");
+   printf("13 a 15.9 = Desnutrição grau III\n");
+   printf("16 a 16.9 = Desnutrição grau II\n");
+   printf("17 a 18.4 = Desnutrição grau I\n");
+   printf("18.5 a 24.9 = Normal\n");
+   printf("25 a 29.9 = Pre-obesidade\n");
+   printf("30 a 34.5 = Obesidade grau I\n");
+   printf("35 a 39.9 = Obesidade grau II\n");
+   printf(">40 Obesidade grau III\n");
+
+
+    return 0;
+}
