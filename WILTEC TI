@@ -1,0 +1,35 @@
+#include<stdio.h>
+
+int main()
+
+{
+    int opcao;
+     
+    printf("Olá, bem vindo a WILTEC TI!!\n\n");
+    printf("Digite a opção desejada:\n\n");
+    printf("Comprar produtos digite 1\n\n");
+    printf("Orçamento digite 2\n\n");
+    printf("Visita técnica digite 3\n\n");
+    printf("Falar com nossos atendentes digite 4\n\n");
+    printf("sair digite 0\n\n");
+    scanf("%d", &opcao);
+   
+    if(opcao == 1){
+    printf("Ok, estamos lhe transferindo para COMPRAS.\n\n");
+    }
+    
+   else if(opcao == 2){
+    printf("Ok, estamos lhe transferindo para ORÇAMENTOS.\n\n");
+    }
+  
+   else if(opcao == 3){
+    printf("Ok, estamos lhe transferindo para VISITA TÉCNICA.\n\n");
+    }
+   else if(opcao == 4){
+    printf("Ok, estamos lhe transferindo para um ATENDENTE.\n\n");
+    }
+    else if(opcao == 0){
+    printf("Agradecemos seu contato.\n");
+    }
+    return 0;
+    }
